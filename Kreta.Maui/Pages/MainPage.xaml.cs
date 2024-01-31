@@ -1,4 +1,4 @@
-﻿namespace Kreta.Maui
+﻿namespace Kreta.Maui.Pages
 {
     public partial class MainPage : ContentPage
     {
