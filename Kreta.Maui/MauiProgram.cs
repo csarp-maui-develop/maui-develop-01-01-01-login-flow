@@ -1,4 +1,5 @@
-﻿using Kreta.Maui.Services;
+﻿using Kreta.Maui.Pages;
+using Kreta.Maui.Services;
 using Microsoft.Extensions.Logging;
 
 namespace Kreta.Maui
@@ -20,6 +21,7 @@ namespace Kreta.Maui
     		builder.Logging.AddDebug();
 #endif
             builder.Services.AddTransient<AuthenticationService>();
+            builder.Services.AddTransient<LoadingPage>();
             return builder.Build();
         }
     }
