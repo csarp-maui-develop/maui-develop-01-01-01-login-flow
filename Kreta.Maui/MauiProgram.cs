@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Kreta.Maui.Services;
+using Microsoft.Extensions.Logging;
 
 namespace Kreta.Maui
 {
@@ -18,7 +19,7 @@ namespace Kreta.Maui
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
+            builder.Services.AddTransient<AuthenticationService>();
             return builder.Build();
         }
     }
