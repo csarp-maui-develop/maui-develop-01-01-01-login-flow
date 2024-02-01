@@ -5,25 +5,25 @@ using Kreta.Maui.Services;
 
 namespace Kreta.Maui.ViewModel
 {
-    public partial class LoginViewModel : ObservableObject
+    public partial class ProfilViewModel : ObservableObject
     {
         private readonly IAuthService _authService;
 
-        public LoginViewModel()
+        public ProfilViewModel()
         {
             _authService = new AuthService();
         }
 
-        public LoginViewModel(IAuthService authService)
+        public ProfilViewModel(IAuthService authService)
         {
             _authService = authService;
         }
 
         [RelayCommand]
-        public async Task Login()
+        public async Task Logout()
         {
-            _authService.Login();
-            await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+            _authService.Logout();
+            await Shell.Current.GoToAsync($"//{nameof(LoginPage)}");
         }
     }
 }
