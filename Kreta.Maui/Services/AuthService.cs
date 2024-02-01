@@ -1,6 +1,6 @@
 ﻿namespace Kreta.Maui.Services
 {
-    public class AuthenticationService
+    public class AuthService : IAuthService
     {
         private const string AuthenticationStateKey = "AuthenticationState";
         public async Task<bool> IsAuthenticatedAsync()

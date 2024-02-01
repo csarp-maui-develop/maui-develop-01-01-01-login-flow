@@ -4,14 +4,14 @@ namespace Kreta.Maui.Pages;
 
 public partial class LoadingPage : ContentPage
 {
-    private readonly AuthenticationService _authenticationService;
+    private readonly AuthService _authenticationService;
     public LoadingPage()
 	{
 		InitializeComponent();
-        _authenticationService = new AuthenticationService();
+        _authenticationService = new AuthService();
 	}
 
-    public LoadingPage(AuthenticationService authenticationServices)
+    public LoadingPage(AuthService authenticationServices)
     {
         InitializeComponent();
         _authenticationService = authenticationServices;
