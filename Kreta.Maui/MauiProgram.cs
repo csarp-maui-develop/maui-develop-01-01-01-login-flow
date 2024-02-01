@@ -20,7 +20,8 @@ namespace Kreta.Maui
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-            builder.Services.AddTransient<AuthService>();
+            builder.Services.AddTransient<LoadingPage>();
+            builder.Services.AddTransient<ProfilPage>();
             builder.Services.AddTransient<LoadingPage>();
             builder.Services.AddTransient<IAuthService, AuthService>();
             return builder.Build();
