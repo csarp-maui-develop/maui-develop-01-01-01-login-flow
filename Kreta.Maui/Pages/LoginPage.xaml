@@ -5,6 +5,9 @@
              x:DataType="viewModel:LoginViewModel"
              x:Class="Kreta.Maui.Pages.LoginPage"
              Title="LoginPage">
+    <ContentPage.BindingContext>
+        <viewModel:LoginViewModel/>
+    </ContentPage.BindingContext>
     <VerticalStackLayout Padding="25"
                          Spacing="25">
         <Label 
