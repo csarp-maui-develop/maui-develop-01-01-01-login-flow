@@ -19,7 +19,8 @@
     <ShellContent
         Title="Bejelentkezés"
         ContentTemplate="{DataTemplate pages:LoginPage}"
-        Route="LoginPage" />
+        Route="LoginPage" 
+        Shell.FlyoutBehavior="Disabled"/>
     <ShellContent
         Title="Profil oldal"
         ContentTemplate="{DataTemplate pages:ProfilPage}"
