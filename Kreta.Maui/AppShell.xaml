@@ -9,10 +9,6 @@
     Title="Kreta.Maui">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate pages:MainPage}"
-        Route="MainPage" />
-    <ShellContent
         Title="Betöltés"
         ContentTemplate="{DataTemplate pages:LoadingPage}"
         Route="LoadingPage" />
@@ -21,8 +17,14 @@
         ContentTemplate="{DataTemplate pages:LoginPage}"
         Route="LoginPage" 
         Shell.FlyoutBehavior="Disabled"/>
-    <ShellContent
+    <TabBar>
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate pages:MainPage}"
+        Route="MainPage" />
+        <ShellContent
         Title="Profil oldal"
         ContentTemplate="{DataTemplate pages:ProfilPage}"
-        Route="ProfilPage" />    
+        Route="ProfilPage" />
+    </TabBar>
 </Shell>
