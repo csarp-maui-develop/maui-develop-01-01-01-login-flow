@@ -8,7 +8,8 @@
     <ContentPage.BindingContext>
         <viewModel:ProfilViewModel/>
     </ContentPage.BindingContext>
-    <VerticalStackLayout>
+    <VerticalStackLayout Padding="25"
+                         Spacing="25">
         <Label 
             Text="Profil"
             VerticalOptions="Center" 
